@@ -312,6 +312,8 @@ textarea.input {
 
 #nav-top {
   text-align: center;
+  background-color: #0F408E;
+
 }
 
 #nav-top>.container {
@@ -329,6 +331,7 @@ textarea.input {
 .nav-social {
   float: left;
   padding: 10px 0px;
+  
 }
 
 .nav-social li {
@@ -339,6 +342,7 @@ textarea.input {
   display: block;
   padding: 15px;
   line-height: 20px;
+  color: white;
 }
 
 /*----------------------------*\
@@ -359,9 +363,18 @@ textarea.input {
   height: 70px;
 }
 
+#logo-text {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  margin-top: 13px;
+}
+
 .nav-logo .logo>img {
-  width: 100%;
+  width: 75%;
   max-height: 70px;
+  margin-top: -15px;
 }
 
 /*----------------------------*\
@@ -371,6 +384,7 @@ textarea.input {
 .nav-btns {
   float: right;
   padding: 10px 0px;
+  color: white;
 }
 
 .nav-btns>button {
