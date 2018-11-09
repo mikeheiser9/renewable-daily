@@ -1506,6 +1506,12 @@ textarea.input {
   font-weight: 600;
 }
 
+.cat-head {
+  font-size: 11vw;
+  color: white;
+  font-weight: 900;
+  margin: 0;}
+
 /*=========================================================
 	RESPONSIVE
 ===========================================================*/
