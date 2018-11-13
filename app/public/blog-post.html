@@ -7,6 +7,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+	<!--  Essential META Tags -->
+
+	<meta property="og:title" content="Renewable Daily | Understanding Different Types of Green Energies">
+	<meta property="og:description" content="People around the world are beginning to consider renewable energy sources such as solar and wind power as viable alternatives to relying on a power grid...">
+	<meta property="og:image" content="./img/renewable-4.jpg">
+	<meta property="og:url" content="https://renewabledaily.org/Understaning-Different-Types-of-Green-Energy">
+	<meta name="twitter:card" content="summary_large_image">
+
+
+	<!--  Non-Essential, But Recommended -->
+
+	<meta property="og:site_name" content="European Travel, Inc.">
+	<meta name="twitter:image:alt" content="Alt text for image">
+
 	<title>Renewable Daily | Understanding Different Types of Green Energies</title>
 
 	<!-- Google font -->
@@ -451,10 +465,10 @@
 					<!-- post share -->
 					<div class="section-row">
 						<div class="post-share">
-							<a href="#" class="social-facebook"><i class="fa fa-facebook"></i><span>Share</span></a>
-							<a href="#" class="social-twitter"><i class="fa fa-twitter"></i><span>Tweet</span></a>
-							<a href="#" class="social-pinterest"><i class="fa fa-pinterest"></i><span>Pin</span></a>
-							<a href="#" ><i class="fa fa-envelope"></i><span>Email</span></a>
+							<a id="fb-share" type="icon_link" href="javascript: void(0)" class="social-facebook" onClick="window.open('http://www.facebook.com/sharer.php?s=100&p[title]=YOUR_TITLE&p[summary]=YOUR_DESCRIPTION&p[url]=YOUR_URL&p[images][0]=YOUR_IMAGE','sharer','toolbar=0,status=0,width=580,height=325');"><i class="fa fa-facebook"></i><span>Share</span></a>
+							<a href="http://twitter.com/home?status=[TITLE]+[URL]" class="social-twitter" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-twitter"></i><span>Tweet</span></a>
+							<a href="http://pinterest.com/pin/create/button/?url=[EncodedURL]&media={[MEDIA]}&description=[TITLE]" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="social-pinterest"><i class="fa fa-pinterest"></i><span>Pin</span></a>
+							<a href="mailto:?subject=Understanding the Different Types of Green Energy&amp;body=Check out this article: https://www.renewabledaily.org/Understaning-Different-Types-of-Green-Energy" ><i class="fa fa-envelope"></i><span>Email</span></a>
 						</div>
 					</div>
 					<!-- /post share -->
@@ -909,6 +923,13 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.stellar.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+	function fbShare(url, title, descr, image, winWidth, winHeight) {
+        var winTop = (screen.height / 2) - (winHeight / 2);
+        var winLeft = (screen.width / 2) - (winWidth / 2);
+        window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width='+winWidth+',height='+winHeight);
+    }
+	</script>
 
 </body>
 
