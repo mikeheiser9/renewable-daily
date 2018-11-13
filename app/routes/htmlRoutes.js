@@ -55,6 +55,31 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/reduce.html"));
   });
 
+  app.get("/How-to-Set-Up-Your-Own-Solar-Panels", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/setupsolar.html"));
+  });
+
+  app.get("/Home-Solar-101", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/solar101.html"));
+  });
+
+  app.get("/Best-State-Rebate-Programs-For-Renewable-Energy", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/staterebate.html"));
+  });
+
+  app.get("/Wind", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/wind.html"));
+  });
+
+  app.get("/Is-Wind-Energy-Right-For-You", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/wind4u.html"));
+  });
+
+  app.get("/Zoning-Requirements-For-Renewable-Energy-Systems", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/zoning.html"));
+  });
+
+
   // If no matching route is found default to home
   app.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
