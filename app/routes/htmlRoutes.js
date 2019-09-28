@@ -47,6 +47,14 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/more.html"));
   });
 
+  app.get("/akoin", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/akoin.html"));
+  });
+
+  app.get("/akoin-toa", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/akoin-toa.html"));
+  });
+
   app.get("/On-the-Grid-vs-Off-the-Grid-Renewable-Energy-Systems", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/onvsoff.html"));
   });
